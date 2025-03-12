@@ -155,16 +155,6 @@
             </div>
         </section>
 
-        <!-- Formulario de Transcripción de Audio -->
-        <section class="contact-form">
-            <h2>Si no quieres escribir tu mensaje, graba o sube tu audio aquí</h2>
-            <form id="transcribe-form" action="/upload" method="post" enctype="multipart/form-data">
-                <label for="audio">Subir archivo de audio:</label>
-                <input type="file" id="audio" name="audio" accept="audio/*" required>
-                <button type="submit">Transcribir Audio</button>
-            </form>
-        </section>
-
         <!-- Formulario de Envío de Mensaje -->
         <section class="contact-form">
             <h2>Formulario de Contacto</h2>
@@ -176,17 +166,10 @@
                 <input type="email" id="email" name="email" required>
                 
                 <label for="mensaje">Mensaje:</label>
-                <textarea id="mensaje" name="mensaje" required>{{ transcription if transcription else '' }}</textarea>
+                <textarea id="mensaje" name="mensaje" required></textarea>
                 
                 <button type="submit">Enviar Mensaje</button>
             </form>
-
-            {% if error %}
-            <div class="error">
-                <h3>Error:</h3>
-                <p>{{ error }}</p>
-            </div>
-            {% endif %}
         </section>
     </main>
 
