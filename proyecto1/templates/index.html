@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abarrotes Lucy</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <header>
+        <div class="logo">Abarrotes Lucy</div>
+        <nav>
+            <ul>
+                <li><a href="#">Todas las Categorías</a></li>
+                <li><a href="#">Tienda por Departamentos</a></li>
+                <li><a href="#">¿Necesitas Ayuda?</a></li>
+                <li><a href="#">Realizar Pedido</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>100% Natural</h1>
+                <h2>Postres, Paletas y Jugos Frescos</h2>
+                <p>¡Disfruta de productos frescos y deliciosos! Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <button>COMPRA AHORA</button>
+            </div>
+        </section>
+
+        <section class="promotions">
+            <div class="promo-card">
+                <h3>20% Descuento</h3>
+                <p>Frutas y Verduras</p>
+                <button>Comprar Colección →</button>
+            </div>
+            <div class="promo-card">
+                <h3>15% Descuento</h3>
+                <p>Productos de Panadería</p>
+                <button>Comprar Colección →</button>
+            </div>
+        </section>
+
+        <section class="categories">
+            <h2>Categorías</h2>
+            <div class="category-icons">
+                <div class="icon"><img src="icon1.png" alt="Icono 1"> Frutas</div>
+                <div class="icon"><img src="icon2.png" alt="Icono 2"> Panes y Dulces</div>
+                <div class="icon"><img src="icon3.png" alt="Icono 3"> Bebidas</div>
+                <div class="icon"><img src="icon4.png" alt="Icono 4"> Productos Cárnicos</div>
+            </div>
+        </section>
+
+        <section class="specials">
+            <h2>¡No te lo pierdas!</h2>
+            <div class="special-item">
+                <h3>Paletas Caseras</h3>
+                <p>Paletas de diferentes sabores y estilos. ¡Elige la tuya!</p>
+                <button>Ver Más →</button>
+            </div>
+            <div class="special-item">
+                <h3>Postres Artesanales</h3>
+                <p>Deliciosos postres caseros para endulzar tu día.</p>
+                <button>Ver Más →</button>
+            </div>
+        </section>
+
+        <!-- Sección de productos -->
+        <section class="products">
+            <h2>Productos Destacados</h2>
+            <div class="product-container">
+                <div class="product">
+                    <img src="product1.jpg" alt="Paleta de Frutas">
+                    <div class="product-info">
+                        <h3>Paleta de Frutas</h3>
+                        <p>Paleta fresca hecha con frutas naturales, perfecta para los días calurosos.</p>
+                        <p class="price">$20.00</p>
+                    </div>
+                </div>
+                <div class="product">
+                    <img src="product2.jpg" alt="Postre de Limón">
+                    <div class="product-info">
+                        <h3>Postre de Limón</h3>
+                        <p>Postre casero con limón fresco, ideal para cualquier ocasión.</p>
+                        <p class="price">$15.00</p>
+                    </div>
+                </div>
+                <div class="product">
+                    <img src="product3.jpg" alt="Jugo Natural">
+                    <div class="product-info">
+                        <h3>Jugo Natural</h3>
+                        <p>Jugo fresco y natural, sin azúcares añadidos.</p>
+                        <p class="price">$10.00</p>
+                    </div>
+                </div>
+                <div class="product">
+                    <img src="product4.jpg" alt="Pan Dulce">
+                    <div class="product-info">
+                        <h3>Pan Dulce</h3>
+                        <p>Pan artesanal recién horneado con un toque dulce.</p>
+                        <p class="price">$12.00</p>
+                    </div>
+                </div>
+                <div class="product">
+                    <img src="product5.jpg" alt="Gelatina de Frutas">
+                    <div class="product-info">
+                        <h3>Gelatina de Frutas</h3>
+                        <p>Gelatina natural con trozos de frutas frescas.</p>
+                        <p class="price">$8.00</p>
+                    </div>
+                </div>
+                <div class="product">
+                    <img src="product6.jpg" alt="Galletas Caseras">
+                    <div class="product-info">
+                        <h3>Galletas Caseras</h3>
+                        <p>Deliciosas galletas hechas en casa, con chispas de chocolate.</p>
+                        <p class="price">$10.00</p>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-controls">
+                <button class="prev-btn">&#8592;</button>
+                <button class="next-btn">&#8594;</button>
+            </div>
+        </section>
+
+        <!-- Sección de servicios -->
+        <section class="services">
+            <h2>Servicios</h2>
+            <div class="service">
+                <h3>Entrega a Domicilio</h3>
+                <p>Te llevamos tus productos directamente a la puerta de tu casa. ¡Aprovecha la comodidad de la entrega a domicilio!</p>
+                <button>Solicitar Entrega</button>
+            </div>
+            <div class="service">
+                <h3>Pedidos Especiales</h3>
+                <p>Si necesitas algo más personalizado, contáctanos para realizar pedidos especiales según tus gustos.</p>
+                <button>Solicitar Pedido Especial</button>
+            </div>
+            <div class="service">
+                <h3>Recoge en Tienda</h3>
+                <p>Haz tu pedido online y recógelo directamente en nuestra tienda sin hacer cola.</p>
+                <button>Ver Más</button>
+            </div>
+        </section>
+
+        <!-- Sección de pedidos y contacto -->
+        <section class="ordering-info">
+            <h2>Opciones de Pedido</h2>
+            <p>Puedes realizar tus pedidos a través de los siguientes métodos:</p>
+            <ul class="order-methods">
+                <li><a href="https://wa.me/1234567890" target="_blank" rel="noopener">Envíanos un mensaje por WhatsApp</a></li>
+                <li><a href="tel:+1234567890">Llamada telefónica al +1234567890</a></li>
+                <li><a href="formulario.html">Rellenar nuestro formulario web</a></li>
+            </ul>
+        
+            <h2>Métodos de Pago</h2>
+            <p>Aceptamos pagos a través de PayPal y MercadoPago. Realiza tu pago de forma segura.</p>
+        </section>
+
+        <section class="contact-info">
+            <h2>Información de Contacto y Ubicación</h2>
+            <p><strong>Teléfono:</strong> +1234567890</p>
+            <p><strong>Dirección:</strong> Calle Ficticia #123, Ciudad XYZ</p>
+            <p><strong>Horarios de Atención:</strong> Lunes a Viernes, 9:00 AM - 6:00 PM</p>
+        </section>
+
+        <!-- Sección de preguntas frecuentes -->
+        <section class="faq">
+            <h2>Preguntas Frecuentes</h2>
+            <div class="faq-item">
+                <h3>¿Cómo realizo un pedido?</h3>
+                <p>Puedes hacer tu pedido por WhatsApp, teléfono o a través de nuestro formulario web.</p>
+            </div>
+            <div class="faq-item">
+                <h3>¿Cuáles son los métodos de pago?</h3>
+                <p>Aceptamos pagos por PayPal y MercadoPago.</p>
+            </div>
+            <div class="faq-item">
+                <h3>¿Realizan entregas a domicilio?</h3>
+                <p>Sí, ofrecemos entrega a domicilio para postres y paletas.</p>
+            </div>
+        </section>
+
+        <!-- Formulario de Transcripción de Audio -->
+        <section class="contact-form">
+            <h2>Si no quieres escribir tu mensaje, graba o sube tu audio aquí</h2>
+            <form id="transcribe-form" action="/upload" method="post" enctype="multipart/form-data">
+                <label for="audio">Subir archivo de audio:</label>
+                <input type="file" id="audio" name="audio" accept="audio/*" required>
+                <button type="submit">Transcribir Audio</button>
+            </form>
+        </section>
+
+        <!-- Formulario de Envío de Mensaje -->
+        <section class="contact-form">
+            <h2>Formulario de Contacto</h2>
+            <form id="message-form" action="/send-message" method="post">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+                
+                <label for="email">Correo electrónico:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" required>{{ transcription if transcription else '' }}</textarea>
+                
+                <button type="submit">Enviar Mensaje</button>
+            </form>
+
+            {% if error %}
+            <div class="error">
+                <h3>Error:</h3>
+                <p>{{ error }}</p>
+            </div>
+            {% endif %}
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Abarrotes Lucy - Todos los derechos reservados</p>
+    </footer>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
+

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transcripción de Audio</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #f0f2f5;
+        }
+        .container {
+            background: #ffffff;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #2c3e50;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        input[type="file"] {
+            padding: 10px;
+            border: 2px solid #3498db;
+            border-radius: 5px;
+            width: 100%;
+            background-color: #f9f9f9;
+        }
+        button {
+            background: #3498db;
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            width: 100%;
+        }
+        button:hover {
+            background: #2980b9;
+        }
+        .resultado {
+            margin-top: 30px;
+            padding: 20px;
+            background: #e9f5ff;
+            border-radius: 5px;
+        }
+        .error {
+            margin-top: 30px;
+            padding: 20px;
+            background: #ffebee;
+            border-radius: 5px;
+            color: #c62828;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Transcripción de Audio en Español</h1>
+        
+        <form action="/upload" method="post" enctype="multipart/form-data">
+            <div class="form-group">
+                <label for="audio">Seleccione un archivo de audio:</label>
+                <input type="file" id="audio" name="audio" accept="audio/*" required title="Seleccione un archivo de audio">
+            </div>
+            <button type="submit">Transcribir Audio</button>
+        </form>
+
+        {% if transcription %}
+        <div class="resultado">
+            <h3>Resultado:</h3>
+            <p>{{ transcription }}</p>
+        </div>
+        {% endif %}
+
+        {% if error %}
+        <div class="error">
+            <h3>Error:</h3>
+            <p>{{ error }}</p>
+        </div>
+        {% endif %}
+    </div>
+</body>
+</html>
