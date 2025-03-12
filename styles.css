@@ -1,0 +1,518 @@
+/* Reset de estilos básicos */
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* Header */
+header {
+    background-color: #d28b8c; /* Rosa cálido */
+    color: white;
+    padding: 15px 0;
+    text-align: center;
+}
+
+header .logo {
+    font-size: 2em;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+/* Navigation */
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+nav ul li a:hover {
+    color: #8e5a47; /* Café oscuro */
+}
+
+/* Hero Section */
+.hero {
+    background: url('https://www.recetasnestle.com.mx/sites/default/files/srh_recipes/9efffd7a0ef6db6b487fcf7c5ae3deed.jpg') no-repeat center center/cover;
+    height: 400px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    padding-top: 50px;
+}
+
+.hero-content h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+.hero-content h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.hero-content button {
+    background-color: #d28b8c; /* Rosa cálido */
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.hero-content button:hover {
+    background-color: #c77c77; /* Rosa más oscuro */
+}
+
+/* Promotions Section */
+.promotions {
+    display: flex;
+    justify-content: space-around;
+    margin: 30px 0;
+}
+
+.promo-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 20px;
+    width: 200px;
+}
+
+.promo-card h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.promo-card p {
+    font-size: 1.2em;
+    margin-bottom: 15px;
+}
+
+.promo-card button {
+    background-color: #8e5a47; /* Café oscuro */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.promo-card button:hover {
+    background-color: #7c4d33; /* Café más oscuro */
+}
+
+/* Categories Section */
+.categories {
+    margin: 50px 0;
+    text-align: center;
+}
+
+.categories h2 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+}
+
+.category-icons {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.icon {
+    background-color: #fff;
+    border-radius: 10px;
+    width: 180px;
+    text-align: center;
+    padding: 20px;
+    margin: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.icon:hover {
+    transform: scale(1.05);
+}
+
+.icon img {
+    max-width: 50px;
+    margin-bottom: 10px;
+}
+
+/* Specials Section */
+.specials {
+    display: flex;
+    justify-content: space-around;
+    margin: 30px 0;
+}
+
+.special-item {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 20px;
+    width: 250px;
+}
+
+.special-item h3 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+.special-item p {
+    font-size: 1.2em;
+    margin-bottom: 15px;
+}
+
+.special-item button {
+    background-color: #8e5a47; /* Café oscuro */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.special-item button:hover {
+    background-color: #7c4d33; /* Café más oscuro */
+}
+
+.products {
+    background-color: #f4f4f4;
+    padding: 40px 0;
+}
+
+.products h2 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.product-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.product {
+    background-color: #fff;
+    padding: 15px;
+    width: 30%;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.product img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.product-info {
+    padding-top: 10px;
+}
+
+.product-info h3 {
+    font-size: 1.3rem;
+    color: #6b4f3b; /* Café */
+}
+
+.product-info p {
+    font-size: 1rem;
+}
+
+.price {
+    font-size: 1.2rem;
+    color: #f7b8c2; /* Rosa */
+    margin-top: 10px;
+}
+
+.carousel-controls {
+    text-align: center;
+    margin-top: 20px;
+}
+
+button.prev-btn,
+button.next-btn {
+    background-color: #6b4f3b;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    font-size: 1.2rem;
+}
+
+button.prev-btn:hover,
+button.next-btn:hover {
+    background-color: #9e7a6f;
+}
+
+footer {
+    background-color: #6b4f3b; /* Café */
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+
+
+/* Services Section */
+.services {
+    background-color: #fff;
+    margin: 50px 0;
+    padding: 20px;
+    text-align: center;
+}
+
+.services .service {
+    margin-bottom: 20px;
+}
+
+.services h2 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+}
+
+.services h3 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+.services p {
+    font-size: 1.2em;
+    margin-bottom: 15px;
+}
+
+.services button {
+    background-color: #8e5a47; /* Café oscuro */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.services button:hover {
+    background-color: #7c4d33; /* Café más oscuro */
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer p {
+    font-size: 1em;
+}
+
+/* Sección de servicios */
+.services {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    background-color: #fff;
+    gap: 20px;
+}
+
+.service {
+    text-align: center;
+    padding: 20px;
+    background-color: #ff99cc; /* Cambié el color de fondo */
+    border-radius: 10px;
+    width: 30%;
+}
+
+.service h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.service button {
+    background-color: #e689b5;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Opciones de pedido y métodos de pago */
+.ordering-info, .contact-info, .promotions, .faq, .contact-form {
+    padding: 20px;
+    background-color: #f9f9f9;
+    margin-bottom: 20px;
+}
+
+.ordering-info ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.ordering-info ul li {
+    margin-bottom: 10px;
+}
+
+.ordering-info a {
+    color: #ff99cc;
+    text-decoration: none;
+}
+
+.ordering-info a:hover {
+    text-decoration: underline;
+}
+
+.contact-info p {
+    font-size: 1rem;
+}
+
+.faq-item {
+    margin-bottom: 15px;
+}
+
+.faq-item h3 {
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.contact-form form input, .contact-form form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-form form button {
+    background-color: #ff99cc;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    .services {
+        flex-direction: column;
+    }
+}
+
+/* Pedido y Métodos de Pago */
+.ordering-info {
+    background-color: #ffffff;
+    padding: 20px;
+    margin: 30px 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.ordering-info h2 {
+    font-size: 2em;
+    margin-bottom: 15px;
+    color: #8e5a47; /* Café oscuro */
+}
+
+.ordering-info p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.order-methods {
+    list-style-type: none;
+    padding: 0;
+}
+
+.order-methods li {
+    margin-bottom: 10px;
+    font-size: 1.2em;
+}
+
+.order-methods li a {
+    color: #8e5a47;
+    text-decoration: none;
+}
+
+.order-methods li a:hover {
+    color: #d28b8c; /* Rosa cálido */
+}
+
+/* Información de Contacto */
+.contact-info {
+    background-color: #ffffff;
+    padding: 20px;
+    margin: 30px 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-info h2 {
+    font-size: 2em;
+    margin-bottom: 15px;
+    color: #8e5a47;
+}
+
+.contact-info p {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+/* Preguntas Frecuentes */
+.faq {
+    background-color: #ffffff;
+    padding: 20px;
+    margin: 30px 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.faq h2 {
+    font-size: 2em;
+    margin-bottom: 15px;
+    color: #8e5a47;
+}
+
+.faq-item {
+    margin-bottom: 20px;
+}
+
+.faq-item h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #d28b8c;
+}
+
+.faq-item p {
+    font-size: 1.2em;
+    margin-bottom: 5px;
+}
