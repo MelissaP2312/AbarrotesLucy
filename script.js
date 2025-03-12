@@ -21,33 +21,3 @@ prevBtn.addEventListener('click', () => {
         productContainer.style.transform = `translateX(-${scrollPosition}px)`;
     }
 });
-
-// Código para el botón de transcribir
-document.getElementById('transcribe-button').addEventListener('click', function () {
-    const audioFile = document.getElementById('audio').files[0];
-    if (!audioFile) {
-        alert('Por favor, selecciona un archivo de audio.');
-        return;
-    }
-
-    const formData = new FormData();
-    formData.append('audio', audioFile);
-
-    fetch('/upload', {
-        method: 'POST',
-        body: formData
-    })
-    .then(response => response.json())
-    .then(data => {
-        if (data.transcription) {
-            // Llenar el campo de mensaje con la transcripción
-            document.getElementById('mensaje').value = data.transcription;
-        } else if (data.error) {
-            alert('Error: ' + data.error);
-        }
-    })
-    .catch(error => {
-        console.error('Error:', error);
-        alert('Hubo un error al transcribir el audio.');
-    });
-});
