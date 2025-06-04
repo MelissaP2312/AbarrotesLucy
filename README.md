@@ -27,7 +27,7 @@ This project provides a simple web interface where customers can upload audio re
    ```bash
    git clone https://github.com/MelissaP2312/AbarrotesLucy.git
    cd AbarrotesLucy
-```
+   ```
 
 Create and activate a virtual environment (optional but recommended):
 
