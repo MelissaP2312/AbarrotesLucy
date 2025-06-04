@@ -25,25 +25,25 @@ This project provides a simple web interface where customers can upload audio re
 1. **Clone the repository**
 
    ```bash
-   git clone https://github.com/MelissaP2312/AbarrotesLucy.git
+   git clone https://github.com/MelissaP2312/Pytorch-reconocimiento-voz-pagina-abarrotes.git
    cd AbarrotesLucy
    ```
 
 Create and activate a virtual environment (optional but recommended):
 
-```bash
-  python -m venv env
-  .\env\Scripts\activate
-```
+   ```bash
+     python -m venv env
+     .\env\Scripts\activate
+   ```
 
 Install the dependencies
 
-```bash
-    pip install -r requirements.txt
-```
+   ```bash
+       pip install -r requirements.txt
+   ```
 
 Run the application:
 
-```bash
-    python app.py
-```
+   ```bash
+       python app.py
+   ```
