@@ -15,7 +15,7 @@ This project provides a simple web interface where customers can upload audio re
 
 ## 🧰 Tech Stack
 
-**Client:** HTML, CSS, JavaScript (Vanilla)  
+**Client:** HTML, CSS, JavaScript
 **Server:** Python, Flask  
 
 ---
@@ -29,20 +29,20 @@ This project provides a simple web interface where customers can upload audio re
    cd AbarrotesLucy
    ```
 
-Create and activate a virtual environment (optional but recommended):
+2. **Create and activate a virtual environment (optional but recommended):**
 
    ```bash
      python -m venv env
      .\env\Scripts\activate
    ```
 
-Install the dependencies
+3. **Install the dependencies**
 
    ```bash
        pip install -r requirements.txt
    ```
 
-Run the application:
+4. **Run the application:**
 
    ```bash
        python app.py
